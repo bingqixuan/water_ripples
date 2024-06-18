@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, shrink-to-fit=0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Water Ripples - 2</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: relative;
+      }
+      #container {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      #veil {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 1;
+        pointer-events: none;
+        transition: opacity 1s ease-in-out;
+      }
+      #progress-bar {
+        position: absolute;
+        width: 200px;
+        height: 5px;
+        left: 50vw;
+        top: 50vh;
+        transition: opacity 0.2s ease;
+        transform: translateX(-50%);
+        background-color: #333;
+      }
+      #progress {
+        position: absolute;
+        width: 0px;
+        height: 5px;
+        left: 0px;
+        top: 0px;
+        transition: width 0.2s ease;
+        background-color: #848484;
+      }
+      #demo-switcher {
+        position: absolute;
+        bottom: 24px;
+        right: 24px;
+      }
+      .demo-btn {
+        border: none;
+        padding: 12px 36px;
+        background-color: rgba(104, 91, 255, 0.6);
+        margin-left: 1rem;
+        display: inline-block;
+        cursor: pointer;
+        color: white;
+        font-size: 18px;
+        font-family: helvetica, sans-serif;
+      }
+      .demo-btn.current {
+        background-color: rgba(108, 108, 108, 0.6);
+        cursor: initial;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <div id="demo-switcher">
+      <button class="demo-btn" onclick="window.location.href='./index.html'">1</button>
+      <button class="demo-btn current">2</button>
+      <button class="demo-btn" onclick="window.location.href='./index3.html'">3</button>
+      <button class="demo-btn" onclick="window.location.href='./index4.html'">4</button>
+      <button class="demo-btn" onclick="window.location.href='./index5.html'">5</button>
+    </div>
+    <div id="veil">
+      <div id="progress-bar"><div id="progress"></div></div>
+    </div>
+    <script src="./index2.js" type="module"></script>
+  </body>
+</html>

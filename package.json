@@ -1,0 +1,18 @@
+{
+  "name": "water_ripples",
+  "version": "1.0.0",
+  "description": "如需帮助请联系微信：digital_twin123",
+  "scripts": {
+    "start": "parcel src/*.html --open",
+    "build": "parcel build src/*.html --public-url ./"
+  },
+  "dependencies": {
+    "dat.gui": "0.7.9",
+    "three": "0.156.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-glsl": "^2.9.3",
+    "parcel": "^2.9.3"
+  },
+  "keywords": []
+}
